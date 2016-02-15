@@ -1,27 +1,56 @@
 @import "_styleguide"
 
 body
-  background-color: $red
+  // background-color: $red
 
-html
+*
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
 
 .navigation-menu
-  height: 100px
+  height: $navigation-height
+  position: fixed
+  width: $screen-width
   background-color: $grey9
+  padding: $gutter5 $gutter7 0 $gutter7
+
+  .back-button, .page-title
+    display: inline-block
+    color: #fff
+    size: 20px
+
+  .page-title
+    text-transform: uppercase
+    color: $gold
+    font-size: 26px
+    letter-spacing: 5px
+    font-weight: bold
+    margin: auto
+    display: block
+    text-align: center
 
 .current-wrapper
-  width: 750px
-  height: 1334px
-  margin-left: 800px
-  margin-top: 40px
+  width: $screen-width
+  height: $screen-height
+  // margin-left: 800px
+  // margin-top: 40px
+  border: 1px solid $black
   background-color: $grey1
   overflow-y: scroll
 
 
+#box
+  #menu
+  #menu_profile_image
+    padding: 100px 0 0 $gutter7
+    img
+      width: 208px
+      height: 208px
+    
+
 .contact-list
+  margin-top: $navigation-height
   
   .contact
     background-color: $white
@@ -29,7 +58,7 @@ html
     // width: 100%
     border: 1px solid transparent
     margin: 2px 0 
-    padding: $gutter3 $gutter6
+    padding: $gutter3 $gutter7
 
   .user-img
     width: 100px
@@ -41,7 +70,7 @@ html
     display: inline-block
     vertical-align: top
     // padding: $gutter1 0 $gutter2 $gutter1
-    padding: $gutter2 0 $gutter2 $gutter5
+    padding: $gutter2 0 $gutter2 $gutter6
 
     h4
       margin-top: 0
@@ -61,4 +90,74 @@ html
     li a
       text-decoration: none
 
+
+
+
+#menu_toggle
+  font-size: 50px
+  margin: $gutter4 0 0 $gutter4
+  color: $white
+
+#box
+  width: 600px
+  font-size: 12px
+  line-height: 20px
+  left: 0px
+  top: 0
+  position: fixed
+  z-index: 100
+
+#tab
+  float: left
+  list-style: none outside none
+  margin: 0
+  padding: 0
+  position: relative
+  z-index: 99
+
+li span
+  display: block
+  padding: 0 5px
+  position: relative
+
+#menu
+  width: 500px
+  // padding: 10px
+  float: left
+  background-color: $grey9
+  height: $screen-height
+  // border-left: 1px solid #B4B8BB
+
+.show, .hide
+  transition: margin-left .3s ease-in
+  -webkit-transition: margin-left .3s ease-in
+
+.show
+  margin-left: -500px
+
+.hide
+  margin-left: 0px
+
+#menu_toggle, .bt
+  cursor: pointer
+
+// .bt
+//   width: 77px
+//   height: 40px
+//   text-align:center
+//   background: #014464
+//   a
+//     line-height: 40px
+//     color: #fff
+//     display: block
+
+// .bt:hover
+//   transition: background .3s linear
+//   background: #32A3D3
+//   -o-transition: background .3s linear
+//   -moz-transition: background .3s linear
+//   -webkit-transition: background .3s linear
+
+// #deco
+//   float: left
       
