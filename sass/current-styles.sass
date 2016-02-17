@@ -2,6 +2,11 @@
 
 body
   // background-color: $red
+p
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
 
 *
   -webkit-box-sizing: border-box
@@ -42,20 +47,41 @@ body
 
 #box
   #menu
-  #menu_profile_image
-    padding: 100px 0 0 $gutter7
+    padding: $navigation-height 0 $gutter7 $gutter7
+  .menu_profile_image
     img
       width: 208px
       height: 208px
-    
+  .menu_profile_info
+    padding-top: $gutter6
+      
+    .profile_name
+      margin: 0 0 0 0
+      color: white
+      font-size: 34px
+      font-weight: 100
+    .profile_view a
+      // margin-bottom: $gutter2
+      color: $grey5
+      text-decoration: none
+      font-size: 24px
+  .menu_pages
+    padding-top: $gutter6
+    ul
+      padding: 0
+      li
+        color: $grey3
+        font-size: 56px 
+        line-height: 40px 
+        list-style-type: none
+        margin: $gutter1 0 $gutter6 0
+        font-weight: 100
 
 .contact-list
   margin-top: $navigation-height
   
   .contact
     background-color: $white
-    // height: 150px
-    // width: 100%
     border: 1px solid transparent
     margin: 2px 0 
     padding: $gutter3 $gutter7
@@ -101,7 +127,6 @@ body
 #box
   width: 600px
   font-size: 12px
-  line-height: 20px
   left: 0px
   top: 0
   position: fixed
